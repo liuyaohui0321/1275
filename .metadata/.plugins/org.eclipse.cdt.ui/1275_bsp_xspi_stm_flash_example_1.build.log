@@ -1,0 +1,21 @@
+15:53:33 **** Build of configuration Debug for project 1275_bsp_xspi_stm_flash_example_1 ****
+make all 
+'Building file: ../src/xspi_stm_flash_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_stm_flash_example.o" -I../../1275_bsp/microblaze_1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xspi_stm_flash_example.d" -MT"src/xspi_stm_flash_example.o" -o "src/xspi_stm_flash_example.o" "../src/xspi_stm_flash_example.c"
+'Finished building: ../src/xspi_stm_flash_example.c'
+' '
+'Building target: 1275_bsp_xspi_stm_flash_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../1275_bsp/microblaze_1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "1275_bsp_xspi_stm_flash_example_1.elf"  ./src/xspi_stm_flash_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 1275_bsp_xspi_stm_flash_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size 1275_bsp_xspi_stm_flash_example_1.elf  |tee "1275_bsp_xspi_stm_flash_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13504	    772	   3884	  18160	   46f0	1275_bsp_xspi_stm_flash_example_1.elf
+'Finished building: 1275_bsp_xspi_stm_flash_example_1.elf.size'
+' '
+
+15:53:33 Build Finished (took 469ms)
+

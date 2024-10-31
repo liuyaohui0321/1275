@@ -1,0 +1,957 @@
+!SESSION 2024-10-31 15:22:12.625 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file E:\1275\1275\.metadata\.bak_0.log
+Created Time: 2024-10-31 15:24:37.166
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.166
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.176
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A08870
+  5* Digilent JTAG-SMT2 SULEE2306923]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.177
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.178
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.178
+!MESSAGE XSCT Command: [version], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.179
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.184
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A08870
+  5* Digilent JTAG-SMT2 SULEE2306923]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.185
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.195
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Result: [null,      2  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.195
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.206
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Result: [null,      6  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.207
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A08870
+  5* Digilent JTAG-SMT2 SULEE2306923]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.212
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.222
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Result: [null,      2  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.223
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.234
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Result: [null,      6  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.234
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.239
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A08870
+  5* Digilent JTAG-SMT2 SULEE2306923]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.241
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.253
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Result: [null,      2  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.253
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.266
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Result: [null,      6  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.266
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.271
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent JTAG-SMT2 210251A08870
+  5* Digilent JTAG-SMT2 SULEE2306923]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.271
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.281
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Result: [null,      2  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.282
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Result: [null,      6  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.293
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A08870" && level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.305
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 210251A08870" && level == 0}], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.306
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.307
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.320
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.325
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 210251A08870
+  5  Digilent JTAG-SMT2 SULEE2306923]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.326
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.338
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==1}], Result: [null,      2  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.338
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.348
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 SULEE2306923" && level==1}], Result: [null,      6  xcku115 (idcode 1390d093 irlen 12 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.349
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.366
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:37.366
+!MESSAGE XSCT Command: [fpga -file E:/1275/1275/system_hw_platform_0/top1030.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.878
+!MESSAGE XSCT command with result: [fpga -file E:/1275/1275/system_hw_platform_0/top1030.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.903
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.905
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.907
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.957
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:54.958
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:55.071
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:55.072
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:58.075
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:58.075
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:58.097
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:58.098
+!MESSAGE XSCT Command: [dow E:/1275/1275/1275/Debug/1275.elf], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:24:58.883
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.479
+!MESSAGE XSCT command with result: [dow E:/1275/1275/1275/Debug/1275.elf], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.524
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.525
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.527
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Result: [null, {"procname": "microblaze_1",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.569
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.619
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.620
+!MESSAGE XSCT Command: [con], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.624
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.640
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.648
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Result: [null, {"microblaze_1": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -mno-xl-soft-div -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra -g",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "mdm_0",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "mdm_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 mdm_0 uart_apm32",
+},
+"stdout": {"category": "",
+"value": "mdm_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 mdm_0 uart_apm32",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.688
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json E:/1275/1275/system_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.692
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json E:/1275/1275/system_hw_platform_0/system.hdf], Result: [null, {"microblaze_1": {"freertos10_xilinx_v1_3": {"name": "freertos10_xilinx",
+"version": "1.3",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_3",
+},
+"standalone_v7_0": {"name": "standalone",
+"version": "7.0",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/bsp/standalone_v7_0",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.694
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.699
+!MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v2_0": {"name": "libmetal",
+"version": "2.0",
+"desc": "Libmetal Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/libmetal_v2_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"lwip211_v1_0": {"name": "lwip211",
+"version": "1.0",
+"desc": "lwip211 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/lwip211_v1_0",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"lwip211_v2_0": {"name": "lwip211",
+"version": "2.0",
+"desc": "lwip211 library: lwIP (light weight IP) is an open source TCP/IP stack configured for Xilinx hard and soft Ethernet MACs",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/lwip211_v2_0",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"openamp_v1_5": {"name": "openamp",
+"version": "1.5",
+"desc": "OpenAmp Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/ThirdParty/sw_services/openamp_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexr5",
+},
+"xilffs_v4_1": {"name": "xilffs",
+"version": "4.1",
+"desc": "Generic Fat File System Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilffs_v4_1",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilflash_v4_6": {"name": "xilflash",
+"version": "4.6",
+"desc": "Xilinx Flash library for Intel/AMD CFI compliant parallel flash",
+"compilerflags": "",
+"linkerflags": "-lxilflash",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilflash_v4_6",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilfpga_v5_0": {"name": "xilfpga",
+"version": "5.0",
+"desc": "XilFPGA library provides an interface to the Linux or bare-metal users for configuring the PL over PCAP from PS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilfpga,-lxil,-lxilsecure,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilfpga_v5_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilisf_v5_13": {"name": "xilisf",
+"version": "5.13",
+"desc": "Xilinx In-system and Serial Flash Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilisf_v5_13",
+"os": "standalone xilkernel freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xillibpm_v1_0": {"name": "xillibpm",
+"version": "1.0",
+"desc": "Xilinx Versal Platform Management Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxillibpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xillibpm_v1_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa72 psu_cortexr5",
+},
+"xilloader_v1_0": {"name": "xilloader",
+"version": "1.0",
+"desc": "Xilinx Versal Platform Loader Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilloader,-lxillibpm,-lxilplmi,-lxilffs,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilloader_v1_0",
+"os": "standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilmailbox_v1_0": {"name": "xilmailbox",
+"version": "1.0",
+"desc": "Xilinx IPI Mailbox Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilmailbox,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilmailbox_v1_0",
+"os": "standalone",
+"proc": "psu_cortexa72 psu_cortexa53 psu_cortexr5 psu_pmu",
+},
+"xilpdi_v1_0": {"name": "xilpdi",
+"version": "1.0",
+"desc": "Xilinx Programable Device Image (PDI) Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpdi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilpdi_v1_0",
+"os": "standalone",
+"proc": "psu_cortexa72 psu_cortexr5",
+},
+"xilplmi_v1_0": {"name": "xilplmi",
+"version": "1.0",
+"desc": "Xilinx versal Platform Loader and Manager Interface Library",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilplmi,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilplmi_v1_0",
+"os": "standalone",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilpm_v2_5": {"name": "xilpm",
+"version": "2.5",
+"desc": "Power Management API Library for ZynqMP",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilpm_v2_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+"xilrsa_v1_5": {"name": "xilrsa",
+"version": "1.5",
+"desc": "Xilinx RSA Library to access RSA and SHA software algorithms on Zynq",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilrsa_v1_5",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9",
+},
+"xilsecure_v4_0": {"name": "xilsecure",
+"version": "4.0",
+"desc": "Xilinx Secure Library provides interface to AES, RSA and SHA hardware engines on ZynqMP Soc and Versal",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilsecure_v4_0",
+"os": "standalone freertos10_xilinx",
+"proc": "psu_cortexa53 psu_cortexr5 psu_pmu psu_cortexa72 psv_cortexa72",
+},
+"xilskey_v6_7": {"name": "xilskey",
+"version": "6.7",
+"desc": "Xilinx Secure Key Library supports programming efuse and bbram",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/sw_services/xilskey_v6_7",
+"os": "standalone freertos10_xilinx",
+"proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.700
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.702
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.702
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.703
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.769
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.772
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json E:/1275/1275/system_hw_platform_0/system.hdf E:/1275/1275/1275_bsp/system.mss], Result: [null, {"axi_dma_gt1lane": {"name": "axidma",
+"ver": "9.9",
+},
+"axi_dma_tcp": {"name": "axidma",
+"ver": "9.9",
+},
+"axi_fifo_mm_s_0": {"name": "llfifo",
+"ver": "5.3",
+},
+"axi_intc_0": {"name": "intc",
+"ver": "3.9",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"ddr4_0": {"name": "mig",
+"ver": "1.0",
+},
+"mdm_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_1_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_1_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"uart_apm32": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_1": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.773
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json E:/1275/1275/system_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.814
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json E:/1275/1275/system_hw_platform_0/system.hdf], Result: [null, {"axi_ddrA_fdma_interCon": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_ddrB_fdma_interCon": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_dma_gt1lane": {"version": "7.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axidma_v9_9": {"name": "axidma",
+"version": "9.9",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/axidma_v9_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_dma_tcp": {"version": "7.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axidma_v9_9": {"name": "axidma",
+"version": "9.9",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/axidma_v9_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_fifo_mm_s_0": {"version": "4.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"llfifo_v5_3": {"name": "llfifo",
+"version": "5.3",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/llfifo_v5_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_intc_0": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"intc_v3_9": {"name": "intc",
+"version": "3.9",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_interconnect_cpu": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_interconnect_mig_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_interconnect_mig_1": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_interconnect_nhc_lite": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_4": {"name": "spi",
+"version": "4.4",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ddr4_0": {"version": "2.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"mig_v1_0": {"name": "mig",
+"version": "1.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/mig_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ddr4_1": {"version": "2.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"mig_v1_0": {"name": "mig",
+"version": "1.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/mig_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_1": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_9": {"name": "cpu",
+"version": "2.9",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_1_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_1_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_1_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_1_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_1_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_axi_clk": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_cpu_clk": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_mig1_250M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uart_apm32": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"uiFDMA_DDRA_1x": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uiFDMA_DDRA_8x": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uiFDMA_DDRA_tcp": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uiFDMA_DDRB_1x": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uiFDMA_DDRB_8x": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"uiFDMA_DDRB_tcp": {"version": "3.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/Xilinx/SDK/2019.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.830
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs E:/1275/1275/system_hw_platform_0/system.hdf microblaze_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:00.831
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs E:/1275/1275/system_hw_platform_0/system.hdf microblaze_1], Result: [null, axi_dma_gt1lane axi_dma_tcp axi_fifo_mm_s_0 axi_intc_0 axi_quad_spi_0 axi_uartlite_0 ddr4_0 mdm_0 microblaze_1_local_memory_dlmb_bram_if_cntlr microblaze_1_local_memory_ilmb_bram_if_cntlr uart_apm32]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:06.181
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/1275/1275/1275_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:25:06.182
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/1275/1275/1275_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:26:28.785
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-262
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-31 15:26:28.788
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-262
