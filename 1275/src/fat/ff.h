@@ -362,7 +362,8 @@ FRESULT my_dcopy(TCHAR *psrc,TCHAR *pdst,u8 fwmode);      					/* copy directory
 FRESULT delete_dir (BYTE * path);                         				/* delete directory */
 void List_TailInsert(LinkedList List,Node node);							/* 尾插入队列 */
 void DestroyList(LinkedList List);											/* 销毁队列 */
-FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList List);
+//FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList List);
+FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList LinkList);
 FRESULT Num_of_Dir_and_File (BYTE *path,DWORD *file_num,DWORD *dir_num,uint8_t mode);	/* 分别获取目录中子目录和文件个数 */
 FRESULT get_Dir_size(TCHAR *path,uint64_t*size);              				/* 获取目录的大小 */
 void get_path_dname(BYTE* path,u8* des);

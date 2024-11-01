@@ -7797,8 +7797,10 @@ void DestroyList(LinkedList List)
 	List = NULL;
 }
 
-////闁荤姳鐒﹀妯肩礊瀹ュ绠ユい鎰剁到娴煎酣鏌涢幒鎾愁棆婵炲牊鍨垮顒勫炊閿旂瓔鍋ㄩ梺鍝勫�稿ú锝呪枎閵忊�崇窞闁革富鍘惧▔銏ゆ煛鐎ｎ亜顏уǎ鍥э躬楠炰線鏁撻敓锟� 闂佸搫瀚晶浠嬪Φ濮樿埖鍎庢い鏃囧亹缁夊灝鈽夐幘鎰佸剱濠⒀冪Ч瀵灚寰勬繝鍌涙殽闁诲海娅㈤幏锟�
+
+
 FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList LinkList)
+//FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList LinkList,DWORD *file_num,DWORD *dir_num)
 {
 	FRESULT res;
 	DIR dir;
@@ -7816,32 +7818,29 @@ FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList LinkList)
 			if (fno.fattrib & AM_DIR) {                    /* It is a directory */
 				i = strlen(path);
 				sprintf(&path[i], "/%s", fno.fname);
-#if 1   		// 婵炴垶鏌ㄩ鍛櫠閻樼粯鍋ㄩ柕濞垮劚琚熼梺璇″厸缁舵岸骞楅懖鈺傚仒闁靛鍎抽幗鐘绘煕鐏炶濡挎繛鍫熷灴瀵剛鎲撮崟顓滐拷濠囨煥濞戞鐏辩�规悂浜堕幃娆撴儌閸濄儳鐛ラ梺鍛婎殘婵兘寮妶澶婇唶闁糕剝鐟㈤弫鍕⒒閸屾繃褰х紒杈ㄧ箞瀹曘儲鎯旈姀锟犳闂佺儵鍋撻崝宀勫船鐎甸潻鎷峰☉娅虫垿鎯堝鍜冩嫹濞戞鎴﹀棘娓氾拷瀹曟繈濡搁敂鍏煎濞达綀顫夊▓鍫曟煙閻у憡瀚�
-				//闂佺厧鎼崐濠氬磻閿濆洦灏庨悗锝庝悍閹风兘鏁撻敓锟�
-				node.data.type=1;		//闂佸搫鍊稿ú锝呪枎閵忋倖鏅柨鐕傛嫹0闂佹寧绋戦張顒勫几閸愨晝顩烽悹鐑樹航娴犳岸鏌ㄥ☉铏1
+#if 1
+				node.data.type=1;
 				get_Dir_size(path,&node.data.size);
 				strcpy(node.data.name,path);
 //				node.data.ChangeTime1
 
-				//闂佺厧鎼崐濠氬磻閿濆绀傞柕澶嗘櫆琚�
 				List_TailInsert(LinkList,node);
 #endif
 				res = record_struct_of_Dir_and_File(path,LinkList);  /* Enter the directory */
 				if (res != FR_OK) break;
 //				printf("directory name is:%s\n", path);
+//				(*dir_num)++;
 				path[i] = 0;
 			}
 			else {                                       /* It is a file. */
 //				printf("file name is:%s/%s\n", path, fno.fname);
 				sprintf(filename,"%s/%s", path, fno.fname);
-#if 1   		//婵炴垶鏌ㄩ鍛櫠閻樼粯鍋ㄩ柕濞垮劚琚熼梺璇″厸缁舵岸骞楅懖鈺傚仒闁靛鍎抽幗鐘绘煕鐏炶濡挎繛鍫熷灴瀵剛鎲撮崟顓滐拷濠囨煥濞戞鐏辩�规悂浜堕幃娆撴儌閸濄儳鐛ラ梺鍛婎殘婵兘寮妶澶婇唶闁糕剝鐟㈤弫鍕⒒閸屾繃褰х紒杈ㄧ箞瀹曘儲鎯旈姀锟犳闂佺儵鍋撻崝宀勫船鐎甸潻鎷峰☉娅虫垿鎯堝鍜冩嫹濞戞鎴﹀棘娓氾拷瀹曟繈濡搁敂鍏煎濞达綀顫夊▓鍫曟煙閻у憡瀚�
-				//闂佺厧鎼崐濠氬磻閿濆洦灏庨悗锝庝悍閹风兘鏁撻敓锟�
-				node.data.type=0;		//闂佸搫鍊稿ú锝呪枎閵忋倖鏅柨鐕傛嫹0闂佹寧绋戦張顒勫几閸愨晝顩烽悹鐑樹航娴犳岸鏌ㄥ☉铏1
+#if 1
+				node.data.type=0;
 				node.data.size=fno.fsize;
 				strcpy(node.data.name,filename);
 //				node.data.ChangeTime1
-
-				//闂傚倸鍊搁崐鎼佸磹閹间礁纾归柣鎴ｅГ閸ゅ嫰鏌涢锝嗙闁稿被鍔庨幉鎼佸籍閸垹绁﹂梺鍝勭▉閸欏酣寮崘顔界叆闁哄浂浜濈�氬湱绱掗幆褍鈷旈柟铏崌閸╃偤骞嬮敂钘変汗闁诲骸婀辨慨鎾夊┑鍫㈢＜闁绘劦鍓欓崝銈嗐亜椤撶姴鍘寸�殿喖顭锋俊鎼佸Ψ閵忊剝鏉搁梻浣虹《濡狙囧疾濠婂懐鎳呯紓鍌氬�搁崐椋庢閵堝绠柣鎴ｅГ閻撴洜锟界櫢鎷烽柨鐔剁矙瀹曟垿鎮欓悜妯轰簵闂婎偄娲﹂幖鈺呮偄閸℃稒鍋ｉ柧蹇曟嚀閸斿銇勯妷褍浠︾紒缁樼洴瀹曘劑顢橀悤浣癸骏闂備浇顕栭崳顕�宕抽敐澶婃瀬闁瑰墽绮弲鎼佹煥閻曞倹瀚�
+//				(*file_num)++;
 				List_TailInsert(LinkList,node);
 #endif
 			}
@@ -7976,8 +7975,6 @@ FRESULT Num_of_Dir_and_File (BYTE *path,DWORD *file_num,DWORD *dir_num,uint8_t m
 				}
 				(*dir_num)++;
 				path[i] = 0;
-//				DIR dir;
-//				res = f_opendir(&dir, path);
 			}
 			else {                                       /* It is a file. */
 				// printf("file name is:%s/%s\n", path, fno.fname);
@@ -7986,8 +7983,6 @@ FRESULT Num_of_Dir_and_File (BYTE *path,DWORD *file_num,DWORD *dir_num,uint8_t m
 		}
 		f_closedir(&dir);
 	}
-//    file_num=nfile;
-//	dir_num=ndir;
     return res;
 }
 
