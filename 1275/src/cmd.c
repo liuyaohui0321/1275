@@ -3924,7 +3924,143 @@ int Radar_Save(void)
 	    char alphanumeric1[16];
 	    char alphanumeric2[16];
 	    char alphanumeric3[16];
+		char cmd_str_11[10]={0};
+		char cmd_str_2[20]={0};
+		char cmd_str_3[20]={0};
+		uint32_t cmd_write_cnt=0,cmd_len=0,name_num=0;
+		uint32_t  buff = (void *)(MEM_DDR4_BASE);
+
+		alphanumeric1_genrat(alphanumeric1);
+		memcpy(alphanumeric2,alphanumeric1,16);
+		memcpy(alphanumeric3,alphanumeric1,16);
+		while(1)
+		{
+			Digprase(name_num,&m,&l,&n);
+			cmd_str_11[0]=alphanumeric1[m];
+			cmd_str_11[1]=alphanumeric2[l];
+			cmd_str_11[2]=alphanumeric3[n];
+//			xil_printf("%s %d  %s\r\n", __FUNCTION__, __LINE__,cmd_str_11);
+
+#if   10	// 覆盖写入
+			// 获取并解析从DMA0传过来的文件路径
+			do{
+				memset(cmd_str_2,0,sizeof(cmd_str_2));
+				memset(cmd_str_3,0,sizeof(cmd_str_3));
+				strcat(cmd_str_11,"_Radar");
+				sprintf(cmd_str_2,"Floder%d/",(name_num/10)+1);  //设置一个文件夹下存放十个文件，因测试发现当前文件系统一个目录下最多存放24个文件
+
+				strcpy(cmd_str_3,cmd_str_2);
+				ret =f_mkdir(cmd_str_3);
+				if (ret != FR_OK) {
+					xil_printf("f_mkdir  Failed! ret=%d\r", ret);
+					if(ret==8) xil_printf("FR_EXIST:Create repeatedly\n");
+					if(ret!=8) return ret;
+				}
+				strcat(cmd_str_2,cmd_str_11);
+//				xil_printf("%s %d  %s\r\n", __FUNCTION__, __LINE__,cmd_str_2);
+				ret = f_open(&wfile,cmd_str_2, FA_CREATE_NEW | FA_WRITE |FA_READ);
+				if (ret != FR_OK)
+				{
+					if(ret ==FR_EXIST)
+					{
+						name_num++;
+						memset(cmd_str_11,0,sizeof(cmd_str_11));
+						Digprase(name_num,&m,&l,&n);
+						cmd_str_11[0]=alphanumeric1[m];
+						cmd_str_11[1]=alphanumeric2[l];
+						cmd_str_11[2]=alphanumeric3[n];
+					}
+					if((ret!=0)&& memcmp(cmd_str_11, "fff",3) == 0)
+					{
+						xil_printf("No file name to allocate!\r\n");
+						return No_filename_to_allocate;
+					}
+				}
+			}while(ret!=FR_OK);
+			xil_printf("%s %d  %s\r\n", __FUNCTION__, __LINE__,cmd_str_11);
+			xil_printf("Waiting FPGA Vio Ctrl Read Write Start  file_name:%s\r\n ",cmd_str_2);
+
+#endif
+
+			while (1)
+			{
+				if (RxReceive(DestinationBuffer,&cmd_len) == XST_SUCCESS)
+				{
+					buff =DestinationBuffer[0];  // 保存写入数据的DDR地址
+					len  =DestinationBuffer[1];  // 写入数据的长度
+
+					if(buff==0x3C3CBCBC)		// 3.19号改 by lyh
+					{
+						xil_printf("I/O Write Finish!\r\n");
+						xil_printf("w_count = %u w_size = %lu\r\n",cmd_write_cnt,f_size(&wfile));
+						for(i=0;i<NHC_NUM;i++)
+						{
+							while (nhc_queue_ept(i) == 0)
+							{
+								do {
+									sts = nhc_cmd_sts(i);
+								}while(sts == 0x01);
+							}
+						}
+						break;
+					}
+					ret = f_write1(
+						&wfile,			/* Open file to be written */
+						buff,			/* Data to be written */
+						len,			/* Number of bytes to write */
+						&bw				/* Number of bytes written */
+					);
+					if (ret != FR_OK)
+					{
+						 xil_printf(" f_write Failed! %d\r\n",ret);
+						 f_close(&wfile);
+						 return ret;
+					}
+					cmd_write_cnt += 1;
+	//				xil_printf("write_cnt:%u \r\n",cmd_write_cnt);
+				}
+				else
+				{
+					for(i=0;i<NHC_NUM;i++)
+					{
+						do {
+								sts = nhc_cmd_sts(i);
+							}while(sts == 0x01);
+					}
+				}
+
+				for(i=0;i<NHC_NUM;i++)
+				{
+					while (nhc_queue_ept(i) == 0)
+					{
+						do {
+							sts = nhc_cmd_sts(i);
+						}while(sts == 0x01);
+					}
+				}
+				if(flag_tcp==1) return 1;
+			 }   // while
+			 ret=f_close(&wfile);
+			 if (ret != FR_OK)
+			 {
+				 xil_printf(" f_close Failed! %d\r\n",ret);
+				 return ret;
+			 }
+			 if(memcmp(cmd_str_11, "fff",3) == 0)  return 0;
+			 memset(cmd_str_11,0,sizeof(cmd_str_11));
+			 name_num++;
+	}
+	return 0;
+}
+int Radar_Save1(void)
+{
+		uint8_t ret=0,sts,m=0,l=0,n=0;
+		uint32_t Status=0,bw=0,i=0,len;
+	    char alphanumeric1[16];
+	    char alphanumeric2[16];
+	    char alphanumeric3[16];
 		BYTE cmd_str_11[100]={0};
+
 		uint32_t cmd_write_cnt=0,cmd_len=0,name_num=0;
 		uint32_t  buff = (void *)(MEM_DDR4_BASE);
 
@@ -3943,6 +4079,7 @@ int Radar_Save(void)
 			// 获取并解析从DMA0传过来的文件路径
 			do{
 				strcat(cmd_str_11,"_Radar");
+
 				ret = f_open(&wfile,cmd_str_11, FA_CREATE_NEW | FA_WRITE |FA_READ);
 		//		ret = f_open(&wfile,"G", FA_CREATE_ALWAYS | FA_WRITE |FA_READ);
 				if (ret != FR_OK)
@@ -4039,7 +4176,9 @@ int Radar_Save(void)
 			 name_num++;
 	}
 	return 0;
+
 }
+
 
 void Internal_count(uint32_t *LEN,uint32_t *TIME,uint32_t *LastSize,uint32_t *Length)
 {

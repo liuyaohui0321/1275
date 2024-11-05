@@ -122,17 +122,19 @@ int main()
 //	test();
 //	run_cmd_d205_8x();
 //	run_cmd_d203(0);
-//	while(flag_tcp!=1)
-//	{
-//		ret=Radar_Save();
-//		if(ret!=0)
-//		{
-//			if(ret==1)	break;
-//			if(ret==No_filename_to_allocate)  break;
-//			xil_printf("------Waiting executing failed!------ ret=%d\r\n",ret);
-//			break;
-//		}
-//	}
+#if 1
+	while(flag_tcp!=1)
+	{
+		ret=Radar_Save();
+		if(ret!=0)
+		{
+			if(ret==1)	break;
+			if(ret==No_filename_to_allocate)  break;
+			xil_printf("------Waiting executing failed!------ ret=%d\r\n",ret);
+			break;
+		}
+	}
+#endif
 	/* receive and process packets */
 	while(1)
 	{
