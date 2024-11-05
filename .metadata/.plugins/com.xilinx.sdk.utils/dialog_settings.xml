@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="E:\1275\1275" key="com.xilinx.sdk.hw.ui.hwspec.last"/>
+	<item value="E:\1275\1275\1275\Debug" key="tcf_debug_app_selection"/>
 	<item value="E:\1275\1275\system_hw_platform_0" key="debug_files_selection"/>
-	<item value="E:\1275\1275\system_hw_platform_0" key="last_stored_selection"/>
+	<item value="E:\1275\1275\1275\Debug" key="zynq_flash_files_selection"/>
+	<item value="E:\1275\1275\1275\Debug" key="last_stored_selection"/>
 </section>

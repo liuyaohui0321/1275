@@ -524,8 +524,8 @@
 #define XPAR_NHC_AXI_LITE_BASEADDR 0x44A60000
 #define XPAR_NHC_AXI_LITE_HIGHADDR 0x44A6FFFF
 
-#define STDIN_BASEADDRESS 0x41400000
-#define STDOUT_BASEADDRESS 0x41400000
+#define STDIN_BASEADDRESS 0x40600000
+#define STDOUT_BASEADDRESS 0x40600000
 
 /******************************************************************/
 

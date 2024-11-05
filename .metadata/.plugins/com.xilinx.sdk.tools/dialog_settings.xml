@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="system_hw_platform_0-blankCheck"/>
+	<item value="system_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="" key="system_hw_platform_0-fsblFile"/>
+	<item value="Auto Detect" key="system_hw_platform_0-device"/>
+	<item value="Local" key="system_hw_platform_0-target"/>
+	<item value="true" key="system_hw_platform_0-verifyFlash"/>
+	<item value="E:\1275\1275\1275\Debug\1275.elf" key="system_hw_platform_0-imgFile"/>
+	<item value="0x2000000" key="system_hw_platform_0-offSet"/>
+	<item value="s25fl512s-spi-x1_x2_x4" key="system_hw_platform_0-flashType"/>
+</section>

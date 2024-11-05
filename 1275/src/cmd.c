@@ -857,6 +857,7 @@ int run_cmd_a201(StructMsg *pMsg)
 			}
 			xil_printf("%s %d  write_len=%d\r\n", __FUNCTION__, __LINE__,write_len);
 			write_len=0;
+//			usleep(10000);
 		break;
 
 		default:
@@ -2359,8 +2360,8 @@ int cmd_reply_a208(BYTE* path)
 		ReplyStructA208Ack.PackNum=SW32(0);
 		ReplyStructA208Ack.AckHandType=SW32(0xA2);
 		ReplyStructA208Ack.AckHandId=SW32(0x01);
-//		ReplyStructA208Ack.FileNum=SW32(ReplyStructA208Ack.FileNum);
-//		ReplyStructA208Ack.DirNum=SW32(ReplyStructA208Ack.DirNum);
+		ReplyStructA208Ack.FileNum=SW32(ReplyStructA208Ack.FileNum);
+		ReplyStructA208Ack.DirNum=SW32(ReplyStructA208Ack.DirNum);
 #endif
 
 		ReplyStructA208Ack.CheckCode=0x0;
@@ -2369,7 +2370,7 @@ int cmd_reply_a208(BYTE* path)
 		// 循环N个单个文件或文件夹目录信息
 		// 1.19号之前的代码，客户不想展示每一层文件夹下的内容，只想显示一层，因此1.19号之后用另一套代码
 		record_struct_of_Dir_and_File(path,LinkList);
-		sum=TotalFileNum+TotaldirNum;
+//		sum=TotalFileNum+TotaldirNum;
 //		ReplyStructA208Ack.message=(SingleFileOrDir  *)wjq_malloc_t(sizeof(SingleFileOrDir)*(sum+1));// 定义存储单个文件或文件夹目录信息结构体数组
 		ReplyStructA208Ack.message=(SingleFileOrDir  *)wjq_malloc_m(sizeof(SingleFileOrDir)*(sum+1));// 定义存储单个文件或文件夹目录信息结构体数组
 		LinkedList r=LinkList;

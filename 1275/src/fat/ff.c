@@ -1745,8 +1745,10 @@ static FRESULT dir_clear (	/* Returns FR_OK or FR_DISK_ERR */
 #endif
 	{
 		ibuf = fs->win; szb = 1;	/* Use window buffer (many single-sector writes may take a time) */
-		for (n = 0; n < fs->csize && disk_write1(fs->pdrv, (BYTE *)(0xA0001000), sect + n, szb) == RES_OK; n += szb) ;	/* Fill the cluster with 0 *///9.3
 		memcpy((BYTE *)(0xA0001000),ibuf,SECTORSIZE*szb);
+		for (n = 0; n < fs->csize && disk_write1(fs->pdrv, (BYTE *)(0xA0001000), sect + n, szb) == RES_OK; n += szb) ;	/* Fill the cluster with 0 *///9.3
+//		memcpy((BYTE *)(0xA0001000),ibuf,SECTORSIZE*szb);
+		memset((BYTE *)(0xA0001000),0,SECTORSIZE*szb);
 	}
 	return (n == fs->csize) ? FR_OK : FR_DISK_ERR;
 }
@@ -7806,7 +7808,8 @@ FRESULT record_struct_of_Dir_and_File(BYTE *path,LinkedList LinkList)
 	DIR dir;
 	UINT i;
 	static FILINFO fno;
-	char filename[1024]={0};
+//	char filename[1024]={0};
+    char filename[256]={0};
 	Node node;
 
 	res = f_opendir(&dir, path);                       /* Open the directory */
@@ -7956,7 +7959,7 @@ FRESULT Num_of_Dir_and_File (BYTE *path,DWORD *file_num,DWORD *dir_num,uint8_t m
 {
     FRESULT res;
     DIR dir;
-    FILINFO fno;
+    static FILINFO fno;
     int i=0;
 
     res = f_opendir(&dir, path);                       /* Open the directory */
