@@ -119,7 +119,7 @@ int main()
 //			return XST_FAILURE;
 //		}
 //		return 0;
-//	test();
+///	test();
 //	run_cmd_d205_8x();
 //	run_cmd_d203(0);
 #if 1
