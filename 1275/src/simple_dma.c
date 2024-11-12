@@ -3,6 +3,7 @@
 
 uint8_t rxflag=0;
 uint8_t flag_tcp=0;
+uint8_t Data_Mode=0;
 uint8_t flag_1x=0;
 int Simple1xDmaInit()
 {
